@@ -16,3 +16,7 @@ client = OpenAI(api_key=api_key)
 # Load the pre-trained model from the local directory
 model_dir = '/Users/sumalathaodati/Desktop/rhomanApi/ssd_mobilenet_v2_fpnlite_320x320_coco17_tpu-8/saved_model'
 model = tf.saved_model.load(model_dir)
+
+# Function to load image
+def load_image_into_numpy_array(path):
+    return np.array(cv2.imread(path))
