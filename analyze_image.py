@@ -20,3 +20,12 @@ model = tf.saved_model.load(model_dir)
 # Function to load image
 def load_image_into_numpy_array(path):
     return np.array(cv2.imread(path))
+
+# Function to detect objects
+def detect_objects(image_path):
+    image_np = load_image_into_numpy_array(image_path)
+    input_tensor = tf.convert_to_tensor(image_np)
+    input_tensor = input_tensor[tf.newaxis, ...]
+
+    detections = model(input_tensor)
+    return detections
