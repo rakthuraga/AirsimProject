@@ -29,3 +29,18 @@ def detect_objects(image_path):
 
     detections = model(input_tensor)
     return detections
+
+# Function to draw bounding boxes
+def draw_bounding_boxes(image_np, detections):
+    h, w, _ = image_np.shape
+    boxes = detections['detection_boxes'][0].numpy()
+    scores = detections['detection_scores'][0].numpy()
+    classes = detections['detection_classes'][0].numpy().astype(np.int64)
+
+    for i in range(boxes.shape[0]):
+        if scores[i] > 0.5:
+            box = boxes[i] * [h, w, h, w]
+            box = box.astype(np.int32)
+            image_np = cv2.rectangle(image_np, (box[1], box[0]), (box[3], box[2]), (0, 255, 0), 2)
+
+    return image_np, scores, classes
