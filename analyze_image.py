@@ -79,3 +79,10 @@ def analyze_objects(scores, classes):
     max_tokens=150)
 
     return response.choices[0].message.content.strip()
+
+# Process the image
+image_path = 'testImage.jpeg'
+detections = detect_objects(image_path)
+image_np = load_image_into_numpy_array(image_path)
+image_with_boxes, scores, classes = draw_bounding_boxes(image_np, detections)
+cv2.imwrite('output_image.png', image_with_boxes)
