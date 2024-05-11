@@ -71,3 +71,11 @@ def analyze_objects(scores, classes):
     else:
         description = f"The image contains the following objects: {', '.join(detected_objects)}."
 
+    response = client.chat.completions.create(model="gpt-4o",
+    messages=[
+        {"role": "system", "content": "You are a helpful assistant."},
+        {"role": "user", "content": f"Analyze the following objects detected in an image: {description}"}
+    ],
+    max_tokens=150)
+
+    return response.choices[0].message.content.strip()
