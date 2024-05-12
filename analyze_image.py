@@ -86,3 +86,7 @@ detections = detect_objects(image_path)
 image_np = load_image_into_numpy_array(image_path)
 image_with_boxes, scores, classes = draw_bounding_boxes(image_np, detections)
 cv2.imwrite('output_image.png', image_with_boxes)
+
+# Analyze the detected objects
+analysis_result = analyze_objects(scores, classes)
+print(analysis_result)
