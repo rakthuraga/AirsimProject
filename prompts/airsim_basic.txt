@@ -21,3 +21,8 @@ Me: Sphere 1, please.
 The following objects are in the scene, and you are to refer to them using these exact names:
 
 Jackson and Smith building, excavator, car, wheelchair sign, tree, building.
+
+None of the objects except for the drone itself are movable. Remember that there are two turbines, and three towers. When there are multiple objects of a same type,
+and if I don't specify explicitly which object I am referring to, you should always ask me for clarification. Never make assumptions.
+
+In terms of axis conventions, forward means positive X axis. Right means positive Y axis. Up means positive Z axis.
