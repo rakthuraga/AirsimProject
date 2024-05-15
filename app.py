@@ -20,3 +20,7 @@ def analyze_image():
     # Check if an image file is present in the request
     if 'image' not in request.files:
         return jsonify({'error': 'No image file provided'}), 400
+    
+    # Check if a question is provided
+    if 'question' not in request.form:
+        return jsonify({'error': 'No question provided'}), 400
