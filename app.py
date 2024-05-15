@@ -14,3 +14,9 @@ app = Flask(__name__)
 # Set up Google Cloud Vision client
 os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'path_to_your_service_account_key.json'
 vision_client = vision.ImageAnnotatorClient()
+
+@app.route('/analyze-image', methods=['POST'])
+def analyze_image():
+    # Check if an image file is present in the request
+    if 'image' not in request.files:
+        return jsonify({'error': 'No image file provided'}), 400
