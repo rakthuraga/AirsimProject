@@ -27,3 +27,46 @@ def analyze_image():
     
     image_file = request.files['image']
     question = request.form['question']
+
+    try:
+        # Open the image using PIL
+        image = Image.open(image_file)
+
+        # Convert the image to bytes for Google Vision API
+        img_byte_arr = io.BytesIO()
+        image.save(img_byte_arr, format='PNG')
+        content = img_byte_arr.getvalue()
+
+        # Perform object detection using Google Vision API
+        image = vision.Image(content=content)
+        response = vision_client.object_localization(image=image)
+        objects = response.localized_object_annotations
+
+        # Collect object names and bounding boxes
+        object_details = [{'name': obj.name, 'score': obj.score} for obj in objects]
+
+        # Create a prompt with the object details and the question
+        object_names = ', '.join([obj['name'] for obj in object_details])
+        prompt = (
+            f"The following objects were detected in the image: {object_names}\n\n"
+            f"Question: {question}"
+        )
+
+        # Call the OpenAI API
+        response = client.chat.completions.create(model="gpt-4",
+        messages=[
+            {"role": "system", "content": "You are a helpful assistant."},
+            {"role": "user", "content": prompt}
+        ])
+
+        analysis = response.choices[0].message.content.strip()
+
+        return jsonify({
+            'objects': object_details,
+            'analysis': analysis
+        })
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
+   
+   
