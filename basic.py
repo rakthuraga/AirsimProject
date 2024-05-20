@@ -55,3 +55,8 @@ def analyze_image(image_path, prompt="What’s in this image?"):
 
     response = requests.post("https://api.openai.com/v1/chat/completions", headers=headers, json=payload)
     return response.json()
+
+# Path to your image file
+image_path = 'test_image.png'
+result = analyze_image(image_path)
+print(result)
