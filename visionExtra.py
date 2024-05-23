@@ -40,3 +40,16 @@ aw.set_camera_pose(new_pose)
 # This code gets the current camera pose using get_camera_pose(), modifies the Z coordinate to move the camera 10 units up, and then sets the new camera pose using set_camera_pose()."""
     }
 ]
+
+def ask(prompt):
+    chat_history.append({"role": "user", "content": prompt})
+    try:
+        completion = client.chat.completions.create(
+            model="gpt-3.5-turbo", messages=chat_history, temperature=0
+        )
+        response = completion.choices[0].message.content
+        chat_history.append({"role": "assistant", "content": response})
+        return response
+    except Exception as e:
+        logger.error(f"Error in OpenAI completion: {e}")
+        return "An error occurred while processing your request."
