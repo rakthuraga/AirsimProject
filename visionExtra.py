@@ -60,3 +60,6 @@ logger.info("AirSim initialized successfully.")
 
 with open(args.prompt, "r") as f:
     prompt = f.read()
+
+ask(prompt)
+logger.info("Welcome to the AirSim chatbot! I am ready to help you with your AirSim questions and commands.")
