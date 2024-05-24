@@ -63,3 +63,16 @@ with open(args.prompt, "r") as f:
 
 ask(prompt)
 logger.info("Welcome to the AirSim chatbot! I am ready to help you with your AirSim questions and commands.")
+
+def extract_python_code(content):
+    code_block_regex = re.compile(r"```(.*?)```", re.DOTALL)
+    code_blocks = code_block_regex.findall(content)
+    if code_blocks:
+        full_code = "\n".join(code_blocks)
+
+        if full_code.startswith("python"):
+            full_code = full_code[7:]
+
+        return full_code
+    else:
+        return None
