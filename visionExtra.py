@@ -87,6 +87,8 @@ while True:
         os.system("cls" if os.name == "nt" else "clear")
         continue
 
+    response = ask(question)
+    print(f"\n{response}\n")
 
     code = extract_python_code(response)
     if code:
