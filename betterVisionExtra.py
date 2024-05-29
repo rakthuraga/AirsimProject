@@ -15,3 +15,10 @@ args = parser.parse_args()
 # Load OpenAI API Key from config
 with open("config.json", "r") as f:
     config = json.load(f)
+
+print("Initializing ChatGPT...")
+client = OpenAI(api_key=config["OPENAI_API_KEY"])
+
+# Read system prompt
+with open(args.sysprompt, "r") as f:
+    sysprompt = f.read()
