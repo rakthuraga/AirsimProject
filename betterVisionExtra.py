@@ -60,3 +60,7 @@ def ask(prompt):
         }
     )
     return chat_history[-1]["content"]
+
+print(f"Done.")
+
+code_block_regex = re.compile(r"```(.*?)```", re.DOTALL)
