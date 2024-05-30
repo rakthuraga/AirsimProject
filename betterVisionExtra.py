@@ -64,3 +64,15 @@ def ask(prompt):
 print(f"Done.")
 
 code_block_regex = re.compile(r"```(.*?)```", re.DOTALL)
+
+def extract_python_code(content):
+    code_blocks = code_block_regex.findall(content)
+    if code_blocks:
+        full_code = "\n".join(code_blocks)
+
+        if full_code.startswith("python"):
+            full_code = full_code[7:]
+
+        return full_code
+    else:
+        return None
