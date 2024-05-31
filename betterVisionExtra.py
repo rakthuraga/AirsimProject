@@ -92,3 +92,23 @@ with open(args.prompt, "r") as f:
 
 ask(prompt)
 print("Welcome to the AirSim chatbot! I am ready to help you with your AirSim questions and commands.")
+
+while True:
+    question = input(colors.YELLOW + "AirSim> " + colors.ENDC)
+
+    if question == "!quit" or question == "!exit":
+        break
+
+    if question == "!clear":
+        os.system("cls")
+        continue
+
+    response = ask(question)
+
+    print(f"\n{response}\n")
+
+    code = extract_python_code(response)
+    if code is not None:
+        print("Please wait while I run the code in AirSim...")
+        exec(extract_python_code(response))
+        print("Done!\n")
