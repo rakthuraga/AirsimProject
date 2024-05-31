@@ -83,3 +83,12 @@ class colors: # You may need to change color settings
     GREEN = "\033[32m"
     YELLOW = "\033[33m"
     BLUE = "\033[34m"
+
+print(f"Initializing AirSim...")
+aw = AirSimWrapper()
+print(f"Done.")
+with open(args.prompt, "r") as f:
+    prompt = f.read()
+
+ask(prompt)
+print("Welcome to the AirSim chatbot! I am ready to help you with your AirSim questions and commands.")
