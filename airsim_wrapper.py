@@ -17,3 +17,16 @@ class AirSimWrapper:
         except Exception as e:
             logger.error(f"Failed to connect to AirSim: {e}")
             raise
+        
+    def get_camera_pose(self):
+        try:
+            return self.client.simGetVehiclePose()
+        except Exception as e:
+            logger.error(f"Error getting camera pose: {e}")
+            return None
+
+    def set_camera_pose(self, pose):
+        try:
+            self.client.simSetVehiclePose(pose, True)
+        except Exception as e:
+            logger.error(f"Error setting camera pose: {e}")
