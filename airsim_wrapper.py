@@ -40,7 +40,7 @@ class AirSimWrapper:
     
     def get_position(self, object_name):
         try:
-            object_names_ue = self.self.client.simListSceneObjects(object_name + ".*")
+            object_names_ue = self.client.(object_name + ".*")
             if not object_names_ue:
                 logger.warning(f"Object '{object_name}' not found in the scene.")
                 return None
