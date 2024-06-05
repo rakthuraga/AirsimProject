@@ -49,3 +49,8 @@ class AirSimWrapper:
         except Exception as e:
             logger.error(f"Error getting position of {object_name}: {e}")
             return None
+        
+    def get_distance_to_object(self, object_name):
+        object_position = self.get_position(object_name)
+        if object_position is None:
+            return float('inf')
