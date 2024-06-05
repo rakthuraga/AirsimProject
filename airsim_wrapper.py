@@ -42,7 +42,7 @@ class AirSimWrapper:
         try:
             object_names_ue = self.client.simListSceneObjects(object_name + ".*")
             if not object_names_ue:
-                logger.warning(f"Object '{object_name}' ")
+                logger.warning(f"Object '{object_name}' not found in the scene.")
                 return None
             pose = self.client.simGetObjectPose(object_names_ue[0])
             return [pose.position.x_val, pose.position.y_val, pose.position.z_val]
