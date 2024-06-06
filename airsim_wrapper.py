@@ -54,3 +54,7 @@ class AirSimWrapper:
         object_position = self.get_position(object_name)
         if object_position is None:
             return float('inf')  # Return an infinite distance if the object is not found
+        
+        camera_pose = self.get_camera_pose()
+        if camera_pose is None:
+            return float('inf')
