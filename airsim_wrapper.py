@@ -53,4 +53,4 @@ class AirSimWrapper:
     def get_distance_to_object(self, object_name):
         object_position = self.get_position(object_name)
         if object_position is None:
-            return float('inf')
+            return float('inf')  # Return an infinite distance if the object is not found
