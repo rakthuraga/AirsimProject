@@ -58,3 +58,13 @@ class AirSimWrapper:
         camera_pose = self.get_camera_pose()
         if camera_pose is None:
             return float('inf') # Return an infinite distance if the camera pose is not found
+        
+        camera_position = [camera_pose.position.x_val, camera_pose.position.y_val, camera_pose.position.z_val]
+        distance = math.sqrt(
+            (camera_position[0] - object_position[0]) ** 2 +
+            (camera_position[1] - object_position[1]) ** 2 +
+            (camera_position[2] - object_position[2]) ** 2
+        )
+        return distance
+        
+        
