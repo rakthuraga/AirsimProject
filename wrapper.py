@@ -24,3 +24,9 @@ class AirSimWrapper:
         except Exception as e:
             logger.error(f"Error getting camera pose: {e}")
             return None
+        
+    def set_camera_pose(self, pose):
+        try:
+            self.client.simSetVehiclePose(pose, True)
+        except Exception as e:
+            logger.error(f"Error setting camera pose: {e}")
