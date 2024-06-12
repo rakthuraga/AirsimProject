@@ -49,3 +49,20 @@ class AirSimWrapper:
         except Exception as e:
             logger.error(f"Error getting position of {object_name}: {e}")
             return None
+        
+    def capture_image(self, image_filename):
+        try:
+            responses = self.client.simGetImages([
+                airsim.ImageRequest("0", airsim.ImageType.Scene, False, False)
+            ])
+            if responses:
+                image_data = responses[0].image_data_uint8
+                airsim.write_file(image_filename, image_data)
+                logger.info(f"Image saved as {image_filename}")
+                return image_filename
+            else:
+                logger.warning("No image captured.")
+                return None
+        except Exception as e:
+            logger.error(f"Error capturing image: {e}")
+            return None
