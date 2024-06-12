@@ -37,3 +37,15 @@ class AirSimWrapper:
         except Exception as e:
             logger.error(f"Error listing scene objects: {e}")
             return []
+        
+    def get_position(self, object_name):
+        try:
+            object_names_ue = self.client.simListSceneObjects(object_name + ".*")
+            if not object_names_ue:
+                logger.warning(f"Object '{object_name}' not found in the scene.")
+                return None
+            pose = self.client.simGetObjectPose(object_names_ue[0])
+            return [pose.position.x_val, pose.position.y_val, pose.position.z_val]
+        except Exception as e:
+            logger.error(f"Error getting position of {object_name}: {e}")
+            return None
