@@ -30,3 +30,10 @@ class AirSimWrapper:
             self.client.simSetVehiclePose(pose, True)
         except Exception as e:
             logger.error(f"Error setting camera pose: {e}")
+
+    def list_scene_objects(self):
+        try:
+            return self.client.simListSceneObjects()
+        except Exception as e:
+            logger.error(f"Error listing scene objects: {e}")
+            return []
