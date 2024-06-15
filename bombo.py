@@ -5,7 +5,7 @@ import os
 from datetime import datetime
 
 # OpenAI API Key
-api_key = ""
+api_key = "put-your-api-key"
 
 # Function to encode the image
 def encode_image(image_path):
