@@ -21,3 +21,14 @@ def save_result(question, response, filename="result.json"):
     }
     with open(filename, "w") as file:
         json.dump(data, file, indent=4)
+
+# Path to your image
+image_path = "test_image.png"
+
+# Getting the base64 string
+base64_image = encode_image(image_path)
+
+headers = {
+    "Content-Type": "application/json",
+    "Authorization": f"Bearer {api_key}"
+}
