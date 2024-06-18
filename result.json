@@ -15,5 +15,17 @@
         "question": "Give a very detailed profile of the scene",
         "response": "This image appears to show the surroundings of a business establishment, specifically focusing on the parking lot and adjacent areas from various camera perspectives. Let's break down the observations from each camera, as positioned in the image grid:\n\n### Top Row:\n- **Top left (LF - Left Front) camera:**\n  - Shows part of a parking area with a ramp.\n  - Two handicap parking spaces near the building.\n  - Partial view of the building to the right.\n  - In the background, there are additional buildings and green trees.\n\n- **Top right (RF - Right Front) camera:**\n  - Slightly different angle of the same scene seen by LF camera.\n  - Clearly shows two handicap parking spaces.\n  - A building with partially visible signage (ending in \"CKSON\").\n\n### Middle Row:\n- **Middle left (LB - Left Back) camera:**\n  - Captures part of the building's fa\u00e7ade with the signage \u201cJACKSON & SMITH\u201d.\n  - Nearby zebra crossing aligned with the building entrance.\n  - A bike rack or something similar near the building.\n  - A few cars and scattered debris or objects near the parking spots.\n\n- **Middle right (RB - Right Back) camera:**\n  - Similar angle to the LB camera, but more to the right.\n  - Better view of the striped pedestrian crossing and parking spaces painted with white lines.\n  - Shows part of the frontage and entrance of the \"JACKSON & SMITH\" building prominently",
         "referenced_image": "test_image.png"
-    }
+    },
+    {
+        "timestamp": "2024-07-09T21:03:17.970820",
+        "question": "How many wheelchair signs are on the scene?",
+        "response": "There are two wheelchair signs visible in the scene. Both are located in the top-left (Left Front) and top-right (Right Front) camera views.",
+        "referenced_image": "test_image.png"
+    },
+    {
+        "timestamp": "2024-07-09T21:06:04.378199",
+        "question": "How many wheelchair signs are on the scene?",
+        "response": "There are two wheelchair signs visible in the images. They can be seen in the Left Front (LF) camera (top left image) and the Right Front (RF) camera (top right image).",
+        "referenced_image": "test_image.png"
+    },
 ]
