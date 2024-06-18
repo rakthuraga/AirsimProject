@@ -27,5 +27,5 @@
         "question": "How many wheelchair signs are on the scene?",
         "response": "There are two wheelchair signs visible in the images. They can be seen in the Left Front (LF) camera (top left image) and the Right Front (RF) camera (top right image).",
         "referenced_image": "test_image.png"
-    },
+    }
 ]
