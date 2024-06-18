@@ -32,3 +32,20 @@ headers = {
     "Content-Type": "application/json",
     "Authorization": f"Bearer {api_key}"
 }
+
+question = "is the jackson and smith building closer to me or the wheelchair signs on the floor?"
+
+payload = {
+    "model": "gpt-4o",
+    "messages": [
+        {
+            "role": "user",
+            "content": question
+        },
+        {
+            "role": "system",
+            "content": f"Image data: {base64_image}"
+        }
+    ],
+    "max_tokens": 300
+}
