@@ -56,3 +56,9 @@ response = requests.post("https://api.openai.com/v1/chat/completions", headers=h
 print(response.json())
 
 response_data = response.json()
+
+# Extracting the response message safely
+try:
+    response_message = response_data['choices'][0]['message']['content'].strip()
+except KeyError as e:
+    response_message = f"Error: {e}. Full response: {response_data}"
