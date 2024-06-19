@@ -62,3 +62,8 @@ try:
     response_message = response_data['choices'][0]['message']['content'].strip()
 except KeyError as e:
     response_message = f"Error: {e}. Full response: {response_data}"
+
+# Save the question and response with metadata
+save_result(question, response_message)
+
+print("Question and response saved to result.json")
