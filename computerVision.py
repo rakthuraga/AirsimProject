@@ -23,3 +23,8 @@ except OSError:
         raise
 
 client.simSetVehiclePose(airsim.Pose(airsim.Vector3r(0, 0, 0), airsim.to_quaternion(0, 0, 0)), True)
+
+max_altitude=30
+min_altitude=1
+altitude_steps=10
+steps = 60
