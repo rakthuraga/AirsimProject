@@ -28,3 +28,9 @@ max_altitude=30
 min_altitude=1
 altitude_steps=10
 steps = 60
+
+randomize_los_angle=False
+
+min_radius=5
+max_radius=10
+radii_steps=5
