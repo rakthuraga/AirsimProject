@@ -37,3 +37,14 @@ radii_steps=5
 
 altitudes = np.linspace(min_altitude,max_altitude, altitude_steps)
 radii = np.linspace(min_radius, max_radius, radii_steps)
+
+for alt_idx, altitude in enumerate(altitudes):
+    for rad_idx, radius in enumerate(radii):
+
+        percent_complete=((alt_idx+1)*(rad_idx+1))/(radii_steps*altitude_steps)*100
+        print(percent_complete)
+        print('{:.2f}% complete'.format(percent_complete))
+        thetas=np.linspace(np.pi,3*np.pi,steps)
+        x_coords = radius*np.cos(thetas)
+        y_coords = radius*np.sin(thetas)
+        pitch=np.arctan2(-1*altitude,radius)
