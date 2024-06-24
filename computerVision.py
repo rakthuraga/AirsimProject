@@ -34,3 +34,6 @@ randomize_los_angle=False
 min_radius=5
 max_radius=10
 radii_steps=5
+
+altitudes = np.linspace(min_altitude,max_altitude, altitude_steps)
+radii = np.linspace(min_radius, max_radius, radii_steps)
