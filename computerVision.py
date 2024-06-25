@@ -51,4 +51,4 @@ for alt_idx, altitude in enumerate(altitudes):
 
         camera_pose = airsim.Pose(airsim.Vector3r(0, 0, 0), airsim.to_quaternion(0, 0, 0))
         client.simSetCameraPose("2", camera_pose)
-        client.simSetCameraPose("3", camera_pose)
+        #client.simSetCameraPose("3", camera_pose)
