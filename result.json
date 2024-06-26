@@ -51,5 +51,5 @@
         "question": "Where are the disabled parking spots located in relation to the entrance of the building?",
         "response": "The disabled parking spots are located near the entrance of the building. Specifically:\n\n- Based on the Bottom Left (LD) and Bottom Right (RD) camera views, the disabled parking spots are situated close to the sidewalk, which leads directly to the entrance of the building. This can be inferred from the presence of the marked spaces with the blue disabled sign in these camera views.\n\nThus, the disabled parking spots are positioned adjacent to the entrance of the building for easy accessibility.",
         "referenced_image": "test_image_two.png"
-    },
+    }
 ]
