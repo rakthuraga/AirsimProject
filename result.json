@@ -27,5 +27,29 @@
         "question": "How many wheelchair signs are on the scene?",
         "response": "There are two wheelchair signs visible in the images. They can be seen in the Left Front (LF) camera (top left image) and the Right Front (RF) camera (top right image).",
         "referenced_image": "test_image.png"
-    }
+    },
+    {
+        "timestamp": "2024-07-10T14:12:07.138395",
+        "question": "How many disabled parking spots are there, and are they occupied or empty?",
+        "response": "There are two disabled parking spots in the image, located in the bottom row closer to the camera's perspective (first row in the parking lot). Both disabled parking spots are empty.",
+        "referenced_image": "test_image_two.png"
+    },
+    {
+        "timestamp": "2024-07-10T14:18:04.420590",
+        "question": "Give a very detailed profile of the scene",
+        "response": "The image displays a scene captured from six different camera angles, organized as follows:\n- **Top left (LF camera)**: Left Front\n- **Top right (RF camera)**: Right Front\n- **Middle left (LB camera)**: Left Back\n- **Middle right (RB camera)**: Right Back\n- **Bottom left (LD camera)**: Left Down\n- **Bottom right (RD camera)**: Right Down\n\n**Detailed Profile of the Scene:**\n\n1. **General Layout:**\n   - The scene is a parking lot with several marked parking spaces.\n   - Some parking spaces are designated for handicapped parking.\n   - There are different types of vehicles parked in the lot, including cars and a van.\n\n2. **Top Row Cameras (LF and RF):**\n   - Both cameras show a view of the parking lot from the front, with a slight angle towards their respective sides (left and right).\n   - There is a wide road visible beyond the parking lot, with a pedestrian crossing.\n   - Several vehicles are parked:\n     - The LF camera shows a black SUV, a blue truck, and a red car.\n     - The RF camera shows similar vehicles but from a slightly different angle, emphasizing the placement and orientation of the vehicles.\n   - Handicapped parking spaces are marked with blue lines and a wheelchair symbol.\n\n3. **Middle Row Cameras (LB and RB):**\n   - These cameras provide a view from the back, showing more of the",
+        "referenced_image": "test_image_two.png"
+    },
+    {
+        "timestamp": "2024-07-10T14:18:38.004226",
+        "question": "Describe the overall setting of the image. Is it an urban, suburban, or rural area?",
+        "response": "The setting depicted in the image appears to be a suburban area. Here's a breakdown of the elements that lead to this conclusion:\n\n1. **Buildings and Infrastructure**: \n   - The presence of several buildings, including what appears to be commercial establishments, indicates a developed area.\n   - Roads are paved and well-marked with pedestrian crossings, which are typical features of suburban infrastructure.\n\n2. **Parking Area**:\n   - There is a sizable parking lot with clearly marked spaces, including designated handicapped parking spots.\n   - This suggests the area accommodates both vehicles and pedestrians, a common trait in suburban regions.\n\n3. **Surroundings**:\n   - There are trees and landscaped areas with grass and shrubs indicating a maintained environment, typical of suburban areas where there is a blend of green space and development.\n   - The scene does not show dense high-rise buildings or large tracts of undeveloped land characteristic of urban or rural areas respectively.\n\n4. **Vehicles**:\n   - The types of vehicles present, including personal cars and possibly a minivan, are consistent with a suburban setting where personal vehicle use is common.\n\nOverall, the mix of commercial buildings, parking infrastructure, greenery, and the presence of personal vehicles are all indicative of a suburban environment.",
+        "referenced_image": "test_image_two.png"
+    },
+    {
+        "timestamp": "2024-07-10T14:19:29.318896",
+        "question": "Where are the disabled parking spots located in relation to the entrance of the building?",
+        "response": "The disabled parking spots are located near the entrance of the building. Specifically:\n\n- Based on the Bottom Left (LD) and Bottom Right (RD) camera views, the disabled parking spots are situated close to the sidewalk, which leads directly to the entrance of the building. This can be inferred from the presence of the marked spaces with the blue disabled sign in these camera views.\n\nThus, the disabled parking spots are positioned adjacent to the entrance of the building for easy accessibility.",
+        "referenced_image": "test_image_two.png"
+    },
 ]
