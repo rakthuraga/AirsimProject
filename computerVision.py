@@ -58,3 +58,23 @@ for alt_idx, altitude in enumerate(altitudes):
         for step in range(steps):
             x = x_coords[step]
             y = y_coords[step]
+
+       
+            yaw=thetas[step]+np.pi
+
+            if randomize_los_angle:
+                yaw+=np.deg2rad(np.random.randint(-150,150)/10)
+                pitch+=np.deg2rad(np.random.randint(-150,150)/10)
+
+            orientation=airsim.to_quaternion(pitch, 0, yaw)
+            client.simSetVehiclePose(airsim.Pose(airsim.Vector3r(x, y, -1*altitude), orientation), True)
+
+
+            responses = client.simGetImages([airsim.ImageRequest("2", airsim.ImageType.Segmentation),airsim.ImageRequest("2", airsim.ImageType.Scene)])
+           
+            for i, response in enumerate(responses):
+                filename = os.path.join(tmp_dir, '{}_{}_{}_{}'.format(i,alt_idx,rad_idx,step))
+                if response.pixels_as_float:
+                    airsim.write_pfm(os.path.normpath(filename + '.pfm'), airsim.get_pfm_array(response))
+                else:
+                    airsim.write_file(os.path.normpath(filename + '.png'), response.image_data_uint8)
