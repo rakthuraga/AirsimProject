@@ -18,3 +18,10 @@ parser = argparse.ArgumentParser()
 parser.add_argument("--prompt", type=str, default="prompts/airsim_basic.txt")
 parser.add_argument("--sysprompt", type=str, default="system_prompts/airsim_basic.txt")
 args = parser.parse_args()
+
+# Load OpenAI API Key from config
+with open("config.json", "r") as f:
+    config = json.load(f)
+
+logger.info("Initializing ChatGPT...")
+client = OpenAI(api_key=config["OPENAI_API_KEY"])
