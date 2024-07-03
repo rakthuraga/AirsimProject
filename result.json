@@ -105,5 +105,11 @@
         "question": "How many buildings are visible in the image, and what are their primary features?",
         "response": "In the provided image, showcasing different cameras' views, the following details can be observed about buildings:\n\n1. **Top Cameras (LF and RF)**:\n   - **LF Camera**: Shows a building with a flat rooftop, equipped with HVAC units. There are additional buildings visible in the background and to the sides.\n   - **RF Camera**: Offers a similar perspective to the LF camera, showing the same rooftop building with HVAC units and additional structures in the background.\n\n2. **Middle Cameras (LB and RB)**:\n   - **LB Camera**: Displays the back/alley side of a building with trash bins and scattered debris. It seems to be adjacent to another structure.\n   - **RB Camera**: Similar view to the LB camera. It shows the back/alley area of a building, indicating these are likely two adjacent buildings.\n\n3. **Bottom Cameras (LD and RD)**:\n   - **LD Camera**: Captures a street view with a building on the left side and signage for another building visible ahead.\n   - **RD Camera**: Provides an equivalent perspective to the LD camera, affirming the existence of multiple buildings along the street.\n\n### Buildings Visible:\n1. **Rooftop Building with HVAC**:\n   - Visible in both the LF and RF camera views.\n   - Flat rooftop with HVAC units.\n\n2. **Back/Alley Buildings**:\n   - Shown in the LB and RB cameras.\n   - Features include trash bins and alley",
         "referenced_image": "test_image_five.png"
+    },
+    {
+        "timestamp": "2024-07-11T14:32:32.563370",
+        "question": "How many trash bins can be seen, and where are they located in the image?",
+        "response": "There are two trash bins visible in the image. They are located in the middle left (Left Back camera) and middle right (Right Back camera) sections of the image. They are situated close to a building, next to some other scattered trash.",
+        "referenced_image": "test_image_five.png"
     }
 ]
