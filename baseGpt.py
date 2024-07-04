@@ -52,3 +52,13 @@ def ask(prompt):
     except Exception as e:
         logger.error(f"Error in OpenAI completion: {e}")
         return "An error occurred while processing your request."
+    
+logger.info("Initializing AirSim...")
+aw = AirSimWrapper()
+logger.info("AirSim initialized successfully.")
+
+with open(args.prompt, "r") as f:
+    prompt = f.read()
+
+ask(prompt)
+logger.info("Welcome to the AirSim chatbot! I am ready to help you with your AirSim questions and commands.")
