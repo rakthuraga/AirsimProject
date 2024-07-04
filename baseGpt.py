@@ -46,7 +46,7 @@ def ask(prompt):
     chat_history.append({"role": "user", "content": prompt})
     try:
         completion = client.chat.completions.create(model="gpt-3.5-turbo", messages=chat_history, temperature=0)
-        response = completion.choices[0].message.content
+        response = completion.choices[0].content
         chat_history.append({"role": "assistant", "content": response})
         return response
     except Exception as e:
