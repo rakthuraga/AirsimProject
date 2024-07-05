@@ -111,5 +111,29 @@
         "question": "How many trash bins can be seen, and where are they located in the image?",
         "response": "There are two trash bins visible in the image. They are located in the middle left (Left Back camera) and middle right (Right Back camera) sections of the image. They are situated close to a building, next to some other scattered trash.",
         "referenced_image": "test_image_five.png"
+    },
+    {
+        "timestamp": "2024-07-11T14:33:12.941699",
+        "question": " Is there any litter or debris visible in the image? If so, describe its location and extent.",
+        "response": "Yes, there is visible litter and debris in the image. Here are the observations based on the locations:\n\n- **Middle Left (LB) camera**: There is a significant amount of litter scattered on the ground in the alleyway. This includes various pieces of paper and other debris. Additionally, there is what appears to be a displaced cardboard box near the left side of the image.\n\n- **Middle Right (RB) camera**: Similar to the LB camera, there is also litter visible in this view of the alleyway. The scattered debris includes numerous pieces of paper and other materials.\n\nThe other camera views (Top Left, Top Right, Bottom Left, and Bottom Right) do not show any significant litter or debris.",
+        "referenced_image": "test_image_five.png"
+    },
+    {
+        "timestamp": "2024-07-11T14:33:34.750875",
+        "question": "How many vehicles are present in the image, and what types of vehicles are they?",
+        "response": "There are a total of seven vehicles present in the image. Here is the breakdown based on their positions:\n\n1. **Top row:**\n   - **LF camera (Top left):**\n     - Red fire truck\n     - White car\n   - **RF camera (Top right):**\n     - Red fire truck (visible in both top-left and top-right cameras)\n     - White car (visible in both top-left and top-right cameras)\n     - White truck\n\n2. **Middle row:**\n   - **LB camera (Middle left):**\n     - A white van parked by the building.\n   - **RB camera (Middle right):**\n     - A white van parked by the building (same as the one in the LB camera)\n\n3. **Bottom row:**\n   - **LD camera (Bottom left):**\n     - White bus\n     - White truck (front right corner viewed)\n   - **RD camera (Bottom right):**\n     - White car\n     - Blue/teal car\n     - Another white car\n\nSummary of vehicle types:\n- 1 fire truck (red)\n- 1 bus (white)\n- 2 trucks (white)\n- 1 van (white)\n- 1 blue/teal car\n- 3 white cars\n\nNote: Some vehicles might appear in multiple camera views. For example, the red fire truck and white car are visible in both the LF and RF camera images. Similarly, the white truck is visible",
+        "referenced_image": "test_image_five.png"
+    },
+    {
+        "timestamp": "2024-07-11T14:35:19.304868",
+        "question": "There seems to be multiple cars in the top left image, how many are there?",
+        "response": "In the top left image (Left Front, LF camera), there are three cars visible.",
+        "referenced_image": "test_image_five.png"
+    },
+    {
+        "timestamp": "2024-07-11T14:36:05.787415",
+        "question": "Are there any road signs or markings visible in the image? If so, what do they indicate?",
+        "response": "Yes, there are road signs and markings visible in the image.\n\n1. **Road Signs**:\n   - In the image captured by the **Right Front (RF) camera** and **Right Back (RB) camera**, there are green highway or directional signs visible in the distance. This type of signage typically provides directions for highways, exits, or destinations.\n\n2. **Road Markings**:\n   - In the images captured by the **RF** and **RB** cameras, there are yellow dashed lines visible in the centre of the road. These lines generally indicate that passing is allowed on the roads.\n   - Additionally, in all front and back camera views (LF, RF, LB, RB), white road markings can be seen along the edges of the road, usually marking the boundaries of the driving lane or the edge of the roadway.\n\nThese signs and markings help in navigation and ensuring safe driving practices by providing critical information to drivers.",
+        "referenced_image": "test_image_five.png"
     }
 ]
