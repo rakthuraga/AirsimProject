@@ -147,5 +147,11 @@
         "question": "Identify any green spaces, trees, or other natural elements in the image and their locations.",
         "response": "In the provided image, natural elements such as green spaces and trees are distributed as follows:\n\n1. **Top left (Left Front - LF) camera:**\n   - Green spaces including lawns and several trees can be seen on both sides of the street.\n\n2. **Top right (Right Front - RF) camera:**\n   - Similar to LF, green spaces including lawns and several trees are visible on both sides of the street.\n\n3. **Middle left (Left Back - LB) camera:**\n   - There are no visible green spaces, trees, or other natural elements in this view. The scene consists mainly of a building and a paved area.\n\n4. **Middle right (Right Back - RB) camera:**\n   - There are no visible green spaces, trees, or other natural elements in this view. The scene also consists mainly of a building and a paved area.\n\n5. **Bottom left (Left Down - LD) camera:**\n   - A small green space (a lawn or grassy area) is visible on the right side of the street just beyond the curb.\n\n6. **Bottom right (Right Down - RD) camera:**\n   - Another small green space (a lawn or grassy area) can be seen on the left side of the street just beyond the curb.\n\nIn summary, the top row (LF and RF) and bottom row (LD and RD) cameras show green spaces and trees, while the middle row (LB and RB) cameras predominantly show urban",
         "referenced_image": "test_image_five.png"
+    },
+    {
+        "timestamp": "2024-07-12T14:40:20.987875",
+        "question": "What do the signs on the road say?",
+        "response": "The signs on the road, visible in the images from the LF and RF cameras (Top Left and Top Right), indicate:\n\n- The left sign points to \"Route 8.\"\n- The middle sign states \"NEXT RIGHT\" with a right arrow towards \"School St.\"\n- The right sign indicates a right turn with the text \"Marshall St.\"",
+        "referenced_image": "test_image_five.png"
     }
 ]
