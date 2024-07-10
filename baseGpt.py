@@ -75,3 +75,26 @@ def extract_python_code(content):
         return full_code
     else:
         return None
+    
+while True:
+    question = input("AirSim> ")
+
+    if question in ["!quit", "!exit"]:
+        break
+
+    if question == "!clear":
+        os.system("cls" if os.name == "nt" else "clear")
+        continue
+
+    response = ask(question)
+    print(f"\n{response}\n")
+
+    code = extract_python_code(response)
+    if code:
+        print("Please wait while I run the code in AirSim...")
+        try:
+            exec(code)
+            print("Done!\n")
+        except Exception as e:
+            logger.error(f"Error executing code: {e}")
+            print("An error occurred while executing the code.\n")
