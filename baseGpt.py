@@ -109,3 +109,10 @@ def move_camera_based_on_analysis():
     result = subprocess.run(["python", "gptHelper.py"], capture_output=True, text=True)
     analysis_result = result.stdout.strip()
     print(f"Analysis Result: {analysis_result}")
+
+     # Process the analysis result to determine camera movement
+    if "obstacle" in analysis_result.lower():
+        current_pose = aw.get_camera_pose()
+        new_pose = airsim.Pose(current_pose.position + airsim.Vector3r(0, 0, 10), current_pose.orientation)
+        aw.set_camera_pose(new_pose)
+        print("Moved camera up by 10 meters to avoid obstacle.")
