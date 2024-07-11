@@ -104,3 +104,8 @@ def move_camera_based_on_analysis():
 
     # Capture image
     aw.capture_image(image_filename)
+
+    # Analyze image using gptHelper.py
+    result = subprocess.run(["python", "gptHelper.py"], capture_output=True, text=True)
+    analysis_result = result.stdout.strip()
+    print(f"Analysis Result: {analysis_result}")
