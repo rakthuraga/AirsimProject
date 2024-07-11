@@ -98,3 +98,9 @@ while True:
         except Exception as e:
             logger.error(f"Error executing code: {e}")
             print("An error occurred while executing the code.\n")
+
+def move_camera_based_on_analysis():
+    image_filename = "current_view.png"
+
+    # Capture image
+    aw.capture_image(image_filename)
