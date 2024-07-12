@@ -116,3 +116,6 @@ def move_camera_based_on_analysis():
         new_pose = airsim.Pose(current_pose.position + airsim.Vector3r(0, 0, 10), current_pose.orientation)
         aw.set_camera_pose(new_pose)
         print("Moved camera up by 10 meters to avoid obstacle.")
+        
+# Call the function to initiate the process
+move_camera_based_on_analysis()
