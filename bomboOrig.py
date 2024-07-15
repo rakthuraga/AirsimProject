@@ -26,3 +26,13 @@ def check_and_download_nltk_data():
         nltk.data.find('chunkers/maxent_ne_chunker')
     except LookupError:
         nltk.download('maxent_ne_chunker')
+
+    try:
+        nltk.data.find('corpora/words')
+    except LookupError:
+        nltk.download('words')
+
+    try:
+        nltk.data.find('corpora/stopwords')
+    except LookupError:
+        nltk.download('stopwords')
