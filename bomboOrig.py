@@ -36,3 +36,6 @@ def check_and_download_nltk_data():
         nltk.data.find('corpora/stopwords')
     except LookupError:
         nltk.download('stopwords')
+
+# Ensure NLTK data is available
+check_and_download_nltk_data()
