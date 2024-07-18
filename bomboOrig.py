@@ -44,3 +44,14 @@ check_and_download_nltk_data()
 def encode_image(image_path):
   with open(image_path, "rb") as image_file:
     return base64.b64encode(image_file.read()).decode('utf-8')
+  
+# Function to save the question and response to a file
+def save_result(question, response, image_path, filename="result.json"):
+    # Load existing data from the file
+    if os.path.exists(filename):
+        with open(filename, "r") as file:
+            data = json.load(file)
+            if not isinstance(data, list):
+                data = []
+    else:
+        data = []
