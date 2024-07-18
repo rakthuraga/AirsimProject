@@ -55,3 +55,13 @@ def save_result(question, response, image_path, filename="result.json"):
                 data = []
     else:
         data = []
+     # Extract the image name from the image path
+    image_name = os.path.basename(image_path)
+
+    # Append the new result
+    data.append({
+        "timestamp": datetime.now().isoformat(),
+        "question": question,
+        "response": response,
+        "referenced_image": image_name
+    })
