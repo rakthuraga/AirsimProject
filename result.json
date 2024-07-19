@@ -237,5 +237,5 @@
         "question": "What is your confidence level that there is a coiled garden hose near the pool (also give a percentage level)?",
         "response": "Based on the given image, the coiled garden hose is visible near the pool in both the Left Back (bottom left) and Right Back (bottom right) camera views.\n\nMy confidence level that there is a coiled garden hose near the pool is very high, approximately 100%.",
         "referenced_image": "test_image_thirteen.png"
-    },
+    }
 ]
