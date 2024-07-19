@@ -237,5 +237,11 @@
         "question": "What is your confidence level that there is a coiled garden hose near the pool (also give a percentage level)?",
         "response": "Based on the given image, the coiled garden hose is visible near the pool in both the Left Back (bottom left) and Right Back (bottom right) camera views.\n\nMy confidence level that there is a coiled garden hose near the pool is very high, approximately 100%.",
         "referenced_image": "test_image_thirteen.png"
-    }
+    },
+    {
+        "timestamp": "2024-08-05T22:25:11.234022",
+        "question": "What is your confidence level that there is a bench or worktable near the pool, a backyard pool with water, an edge of                    a swimming pool with tiled flooring, a yellow school bus, a drone near the construction site, and the day bein sunny. (also give a percentage level for each)?",
+        "response": "Based on the provided images:\n\n1. **Bench or worktable near the pool:**\n   - **Confidence level:** High (90%)\n   - **Reasoning:** In the Bottom left (LB) and Bottom right (RB) cameras, there is a visible structure that resembles a bench or worktable near the edge of the pool.\n\n2. **Backyard pool with water:**\n   - **Confidence level:** High (95%)\n   - **Reasoning:** Images from both Bottom left (LB) and Bottom right (RB) cameras clearly show a pool filled with water.\n\n3. **Edge of a swimming pool with tiled flooring:**\n   - **Confidence level:** High (95%)\n   - **Reasoning:** The perimeter of the pool in the Middle left (LD) and Middle right (RD) cameras shows tiled flooring around the edge of the pool.\n\n4. **Yellow school bus:**\n   - **Confidence level:** High (95%)\n   - **Reasoning:** Both Top left (LF) and Top right (RF) cameras depict a yellow school bus near the construction site.\n\n5. **A drone near the construction site:**\n   - **Confidence level:** Medium (70%)\n   - **Reasoning:** In the Middle left (LD) and Middle right (RD) cameras, there is a drone visible above the ground next to what appears to be a construction area.\n\n6. **The day being sunny:**\n   - **Confidence level:** High (90",
+        "referenced_image": "test_image_thirteen.png"
+    },
 ]
