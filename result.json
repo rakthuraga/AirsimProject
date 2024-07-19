@@ -244,4 +244,10 @@
         "response": "Based on the provided images:\n\n1. **Bench or worktable near the pool:**\n   - **Confidence level:** High (90%)\n   - **Reasoning:** In the Bottom left (LB) and Bottom right (RB) cameras, there is a visible structure that resembles a bench or worktable near the edge of the pool.\n\n2. **Backyard pool with water:**\n   - **Confidence level:** High (95%)\n   - **Reasoning:** Images from both Bottom left (LB) and Bottom right (RB) cameras clearly show a pool filled with water.\n\n3. **Edge of a swimming pool with tiled flooring:**\n   - **Confidence level:** High (95%)\n   - **Reasoning:** The perimeter of the pool in the Middle left (LD) and Middle right (RD) cameras shows tiled flooring around the edge of the pool.\n\n4. **Yellow school bus:**\n   - **Confidence level:** High (95%)\n   - **Reasoning:** Both Top left (LF) and Top right (RF) cameras depict a yellow school bus near the construction site.\n\n5. **A drone near the construction site:**\n   - **Confidence level:** Medium (70%)\n   - **Reasoning:** In the Middle left (LD) and Middle right (RD) cameras, there is a drone visible above the ground next to what appears to be a construction area.\n\n6. **The day being sunny:**\n   - **Confidence level:** High (90",
         "referenced_image": "test_image_thirteen.png"
     },
+    {
+        "timestamp": "2024-08-05T22:28:05.106085",
+        "question": "What is your confidence level that there is a yellow school bus (also give a percentage level)?",
+        "response": "After thoroughly analyzing the image from all six camera perspectives (Left Front, Right Front, Left Down, Right Down, Left Back, and Right Back), my confidence level that there is a yellow school bus is 0%.\n\nThere is no visible yellow school bus observed from any of the perspectives. The vehicles present seem to be mainly cars and trucks, as demonstrated in the parking lot and different camera views.",
+        "referenced_image": "test_image_two.png"
+    }
 ]
