@@ -255,5 +255,11 @@
         "question": "What is your confidence level that there is a blue wheelchair sign (also give a percentage level)?",
         "response": "I am 100% confident that there are blue wheelchair signs present in the image. All of the panels (LF, RF, LD, RD, LB, and RB) show visible blue wheelchair signs in the designated parking spaces.",
         "referenced_image": "test_image_two.png"
+    },
+    {
+        "timestamp": "2024-08-05T22:30:31.511172",
+        "question": "What is your confidence level that there is a red truck (also give a percentage level)?",
+        "response": "From the image provided, it appears there is a red truck visible in the top left (Left Front, LF) frame, the top right (Right Front, RF) frame, and the bottom left (Left Back, LB) frame. \n\nBased on this observation, I would state that my confidence level that there is a red truck visible in the image is 100%.",
+        "referenced_image": "test_image_two.png"
     }
 ]
