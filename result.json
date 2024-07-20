@@ -249,5 +249,11 @@
         "question": "What is your confidence level that there is a yellow school bus (also give a percentage level)?",
         "response": "After thoroughly analyzing the image from all six camera perspectives (Left Front, Right Front, Left Down, Right Down, Left Back, and Right Back), my confidence level that there is a yellow school bus is 0%.\n\nThere is no visible yellow school bus observed from any of the perspectives. The vehicles present seem to be mainly cars and trucks, as demonstrated in the parking lot and different camera views.",
         "referenced_image": "test_image_two.png"
+    },
+    {
+        "timestamp": "2024-08-05T22:30:07.476574",
+        "question": "What is your confidence level that there is a blue wheelchair sign (also give a percentage level)?",
+        "response": "I am 100% confident that there are blue wheelchair signs present in the image. All of the panels (LF, RF, LD, RD, LB, and RB) show visible blue wheelchair signs in the designated parking spaces.",
+        "referenced_image": "test_image_two.png"
     }
 ]
