@@ -261,5 +261,11 @@
         "question": "What is your confidence level that there is a red truck (also give a percentage level)?",
         "response": "From the image provided, it appears there is a red truck visible in the top left (Left Front, LF) frame, the top right (Right Front, RF) frame, and the bottom left (Left Back, LB) frame. \n\nBased on this observation, I would state that my confidence level that there is a red truck visible in the image is 100%.",
         "referenced_image": "test_image_two.png"
-    }
+    },
+    {
+        "timestamp": "2024-08-05T22:30:55.956963",
+        "question": "What is your confidence level that there is a red truck (also give a percentage level)?",
+        "response": "Based on the provided image, my confidence level that there is a red truck is very high.\n\nObserving the positions of the cameras:\n- In the top right image from the Right Front (RF) camera, there is a red vehicle parked in the second row from the bottom, right side.\n- Similarly, in the bottom left image from the Left Back (LB) camera, there is a red vehicle visible in the parking lot, located towards the far left side of the view.\n\nGiven the consistency of its appearance in multiple camera feeds, the vehicle is indeed a red truck parked in the parking lot near the other vehicles.\n\nMy confidence level for this assertion is 95%.",
+        "referenced_image": "test_image_two.png"
+    },
 ]
