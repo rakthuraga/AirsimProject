@@ -271,7 +271,7 @@
     {
         "timestamp": "2024-08-05T22:31:26.372434",
         "question": "What is your confidence level that there is a red truck (also give a percentage level)?",
-        "response": "In analyzing the provided images from the cameras, I can observe the following:\n\n1. There is a red vehicle visible in the top left camera (LF camera), top right camera (RF camera), and bottom left camera (LB camera), parking next to the white vehicle and a little behind it.\n2. The red vehicle appears to be a sedan or a similar type of car, not a truck.\n\nBased on these observations, I am confident that there is a red car (not a truck) present in the parking lot. My confidence level for identifying the red vehicle as a car and not a truck is about 90%.",
+        "response": "In analyzing the provided images from the cameras, I can observe the following: 1. There is a red vehicle visible in the top left camera (LF camera), top right camera (RF camera), and bottom left camera (LB camera), parking next to the white vehicle and a little behind it 2. The red vehicle appears to be a sedan or a similar type of car, not a truck.Based on these observations, I am confident that there is a red car (not a truck) present in the parking lot. My confidence level for identifying the red vehicle as a car and not a truck is about 90%.",
         "referenced_image": "test_image_two.png"
     }
 ]
