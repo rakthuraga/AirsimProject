@@ -65,3 +65,7 @@ def save_result(question, response, image_path, filename="result.json"):
         "response": response,
         "referenced_image": image_name
     })
+
+    # Save the updated data back to the file
+    with open(filename, "w") as file:
+        json.dump(data, file, indent=4)
