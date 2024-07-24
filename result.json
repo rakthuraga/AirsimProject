@@ -273,5 +273,17 @@
         "question": "What is your confidence level that there is a red truck (also give a percentage level)?",
         "response": "In analyzing the provided images from the cameras, I can observe the following: 1. There is a red vehicle visible in the top left camera (LF camera), top right camera (RF camera), and bottom left camera (LB camera), parking next to the white vehicle and a little behind it 2. The red vehicle appears to be a sedan or a similar type of car, not a truck.Based on these observations, I am confident that there is a red car (not a truck) present in the parking lot. My confidence level for identifying the red vehicle as a car and not a truck is about 90%.",
         "referenced_image": "test_image_two.png"
+    },
+    {
+        "timestamp": "2024-08-05T22:32:54.386699",
+        "question": "What is your confidence level that there is a white truck (make sure it is a truck and not something else) (also give a percentage level)?",
+        "response": "Based on the images from the cameras, it appears that there is a white truck parked in the lot. The larger vehicle positioned in what looks like a handicapped-accessible parking space on the left (analyzing the views from all camera angles) has characteristics of a truck: it has an open cargo bed and a larger body typical of a truck.\n\nIn the images, particularly from the LF (top left) and LB (bottom left) camera angles, the vehicle prominently displays features of a truck and appears white.\n\nI would estimate my confidence level that there is a white truck in the images as 95%.",
+        "referenced_image": "test_image_two.png"
+    },
+    {
+        "timestamp": "2024-08-05T22:33:26.030715",
+        "question": "What is your confidence level that there is a white truck (make sure it is a truck and not something else) (also give a percentage level)?",
+        "response": "My confidence level that there is a white truck in the image is 90%.\n\nHere's why:\n- The vehicle visible in the images from the LF, RF, LB, and RB cameras has the shape and structure of a truck, not a car.\n- The truck appears to be white based on the prominent areas of the vehicle visible in these images.",
+        "referenced_image": "test_image_two.png"
     }
 ]
