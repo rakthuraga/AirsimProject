@@ -285,5 +285,11 @@
         "question": "What is your confidence level that there is a white truck (make sure it is a truck and not something else) (also give a percentage level)?",
         "response": "My confidence level that there is a white truck in the image is 90%.\n\nHere's why:\n- The vehicle visible in the images from the LF, RF, LB, and RB cameras has the shape and structure of a truck, not a car.\n- The truck appears to be white based on the prominent areas of the vehicle visible in these images.",
         "referenced_image": "test_image_two.png"
+    },
+    {
+        "timestamp": "2024-08-05T22:38:30.269588",
+        "question": "What is your confidence level that there is a white truck (make sure it is a truck and not something else) (also give a percentage level)?",
+        "response": "Based on the images provided, my confidence level is very high (about 95%) that there is a white truck. The truck is clearly identifiable due to its size, shape, and design features that distinguish it from a car.\n\nIn relation to the wheelchair sign:\n\n- In the Top Left (LF) and Top Right (RF) camera views, the white truck is parked directly adjacent to the first wheelchair sign.\n- In the Middle Left (LD) and Middle Right (RD) camera views, the white truck is visible at the top of the leftmost parking space next to the wheelchair sign.\n- In the Bottom Left (LB) and Bottom Right (RB) camera views, it is seen partially in the frame, again next to the wheelchair sign.\n\nTherefore, the white truck is directly next to the first wheelchair sign, to the left of it.",
+        "referenced_image": "test_image_two.png"
     }
 ]
