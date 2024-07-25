@@ -69,3 +69,8 @@ def save_result(question, response, image_path, filename="result.json"):
     # Save the updated data back to the file
     with open(filename, "w") as file:
         json.dump(data, file, indent=4)
+
+def extract_coordinates(text):
+    pattern = re.compile(r'\(\d+%?, \d+%?\)')
+    coordinates = pattern.findall(text)
+    return coordinates
