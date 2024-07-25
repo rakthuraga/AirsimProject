@@ -301,7 +301,7 @@
     {
         "timestamp": "2024-08-05T22:55:38.646744",
         "question": "What is your confidence level that there is a blue car or truck (also give a percentage level)?",
-        "response": "Based on the provided image annotations and the view from the multiple cameras, there is a blue vehicle visible in the \"Left Front (LF)\" and \"Right Front (RF)\" camera feeds (top left and top right images).\n\nGiven this observation, my confidence level that there is a blue car or truck present in the described scene is 100%.",
+        "response": "Based on the provided image annotations and the view from the multiple cameras, there is a blue vehicle visible in the \"Left Front (LF)\" and \"Right Front (RF)\" camera feeds (top left and top right images).Given this observation, my confidence level that there is a blue car or truck present in the described scene is 100%.",
         "referenced_image": "test_image_six.png"
-    },
+    }
 ]
