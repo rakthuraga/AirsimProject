@@ -74,3 +74,11 @@ def extract_coordinates(text):
     pattern = re.compile(r'\(\d+%?, \d+%?\)')
     coordinates = pattern.findall(text)
     return coordinates
+
+# Function to extract qualitative descriptions using NLTK
+def extract_qualitative_descriptions(text):
+    # Tokenize the text
+    tokens = nltk.word_tokenize(text)
+    
+    # Perform part-of-speech tagging
+    tagged_tokens = nltk.pos_tag(tokens)
