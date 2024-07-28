@@ -81,4 +81,4 @@ def extract_qualitative_descriptions(text):
     tokens = nltk.word_tokenize(text)
     
     # Perform part-of-speech tagging
-    taggd_tokens = nltk.pos_tag(tokens)
+    tagged_tokens = nltk.pos_tag(tokens)
