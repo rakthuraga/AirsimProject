@@ -82,3 +82,6 @@ def extract_qualitative_descriptions(text):
     
     # Perform part-of-speech tagging
     tagged_tokens = nltk.pos_tag(tokens)
+
+    # Define a chunk grammar to find adjective-noun phrases
+    grammar = r"ADJ_NOUN: {<JJ><NN|NNS>}"
