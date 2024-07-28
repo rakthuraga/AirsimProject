@@ -85,3 +85,9 @@ def extract_qualitative_descriptions(text):
 
     # Define a chunk grammar to find adjective-noun phrases
     grammar = r"ADJ_NOUN: {<JJ><NN|NNS>}"
+
+    # Create a chunk parser
+    chunk_parser = nltk.RegexpParser(grammar)
+    
+    # Parse the tagged tokens to find chunks
+    chunks = chunk_parser.parse(tagged_tokens)
