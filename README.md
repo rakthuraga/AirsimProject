@@ -6,4 +6,4 @@ Add config.json file with following code:
 }
 
 BomboOrig.py:
-This file takes in an image (screenshot from airsim unreal midwestworld environment) 
+This file takes in an image (screenshot from airsim unreal MidWestWorld environment) 
