@@ -91,3 +91,11 @@ def extract_qualitative_descriptions(text):
     
     # Parse the tagged tokens to find chunks
     chunks = chunk_parser.parse(tagged_tokens)
+
+     # Extract qualitative descriptions
+    descriptions = []
+    for subtree in chunks.subtrees(filter=lambda t: t.label() == 'ADJ_NOUN'):
+        description = " ".join(word for word, pos in subtree.leaves())
+        descriptions.append(description)
+    
+    return descriptions
