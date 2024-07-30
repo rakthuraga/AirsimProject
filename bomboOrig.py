@@ -99,3 +99,17 @@ def extract_qualitative_descriptions(text):
         descriptions.append(description)
     
     return descriptions
+
+prompt_coordinates = ("In the following image, the cameras are positioned as follows:\n\
+                    Top left: Left Front (LF) camera\n\
+                    Top right: Right Front (RF) camera\n\
+                    Middle left: Left Down (LD) camera\n\
+                    Middle right: Right Down (RD) camera\n\
+                    Bottom left: Left Back (LB) camera\n\
+                    Bottom right: Right Back (RB) camera \
+                    Please analyze the following image and identify the location of the specified object using percentage-based coordinates. The coordinates should represent the position of the object relative to the dimensions of the image:\
+                    - 0% horizontally means the object is at the far left of the image.\
+                    - 100% horizontally means the object is at the far right of the image.\
+                    - 0% vertically means the object is at the top of the image.\
+                    - 100% vertically means the object is at the bottom of the image.\
+                    Provide the coordinates in the format (horizontal_percentage, vertical_percentage). For example, if an object is located at the center of the image, the coordinates should be (50%, 50%). If an object is located at the bottom-right corner, the coordinates should be (100%, 100%).\
