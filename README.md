@@ -2,7 +2,7 @@
 
 Add config.json file with following code:
 {
-    "OPENAI_API_KEY": "fill in with your openai key (must be gpt-4o )"
+    "OPENAI_API_KEY": "fill in with your openai key (must be able to support gpt-4o )"
 }
 
 BomboOrig.py:
