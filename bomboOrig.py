@@ -117,3 +117,12 @@ prompt_coordinates = ("In the following image, the cameras are positioned as fol
 
 prompt_coordinates_simplified = ("Provide the coordinates in the format (horizontal_percentage, vertical_percentage). For example, if an object is located at the center of the image, the coordinates should be (50%, 50%). If an object is located at the bottom-right corner, the coordinates should be (100%, 100%).\
                     The object I want you to do this for is the car in the left front camera and right front camera.")
+
+prompt_qualitative = ("In the following image, the cameras are positioned as follows:\n\
+                    Top left: Left Front (LF) camera\n\
+                    Top right: Right Front (RF) camera\n\
+                    Middle left: Left Down (LD) camera\n\
+                    Middle right: Right Down (RD) camera\n\
+                    Bottom left: Left Back (LB) camera\n\
+                    Bottom right: Right Back (RB) camera \
+                    desribe the scene in the left back and right back cameras")
