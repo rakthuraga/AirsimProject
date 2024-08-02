@@ -114,3 +114,6 @@ prompt_coordinates = ("In the following image, the cameras are positioned as fol
                     - 100% vertically means the object is at the bottom of the image.\
                     Provide the coordinates in the format (horizontal_percentage, vertical_percentage). For example, if an object is located at the center of the image, the coordinates should be (50%, 50%). If an object is located at the bottom-right corner, the coordinates should be (100%, 100%).\
                     The object I want you to do this for is the house in the left back camera")
+
+prompt_coordinates_simplified = ("Provide the coordinates in the format (horizontal_percentage, vertical_percentage). For example, if an object is located at the center of the image, the coordinates should be (50%, 50%). If an object is located at the bottom-right corner, the coordinates should be (100%, 100%).\
+                    The object I want you to do this for is the car in the left front camera and right front camera.")
