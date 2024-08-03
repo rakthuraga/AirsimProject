@@ -128,3 +128,12 @@ prompt_qualitative = ("In the following image, the cameras are positioned as fol
                     desribe the scene in the left back and right back cameras")
 
 prompt_qualitative_simplified = ("desribe the scene in the left back and right back cameras")
+
+prompt_pixels = ("In the following image, the cameras are positioned as follows:\n\
+                    Top left: Left Front (LF) camera\n\
+                    Top right: Right Front (RF) camera\n\
+                    Middle left: Left Down (LD) camera\n\
+                    Middle right: Right Down (RD) camera\n\
+                    Bottom left: Left Back (LB) camera\n\
+                    Bottom right: Right Back (RB) camera \
+                    give me the pixel location of the car in this image (use the midpoint of the car) and also give me the pixels of the entire image for reference (only use left front camera for the image)")
