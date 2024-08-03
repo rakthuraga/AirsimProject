@@ -126,3 +126,5 @@ prompt_qualitative = ("In the following image, the cameras are positioned as fol
                     Bottom left: Left Back (LB) camera\n\
                     Bottom right: Right Back (RB) camera \
                     desribe the scene in the left back and right back cameras")
+
+prompt_qualitative_simplified = ("desribe the scene in the left back and right back cameras")
