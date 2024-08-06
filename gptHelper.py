@@ -55,3 +55,8 @@ def analyze_image(image_path, question):
         ],
         "max_tokens": 300
     }
+
+    response = requests.post("https://api.openai.com/v1/chat/completions", headers=headers, json=payload)
+    response_data = response.json()
+    response_message = response_data['choices'][0]['message']['content'].strip()
+    return response_message
