@@ -137,3 +137,37 @@ prompt_pixels = ("In the following image, the cameras are positioned as follows:
                     Bottom left: Left Back (LB) camera\n\
                     Bottom right: Right Back (RB) camera \
                     give me the pixel location of the car in this image (use the midpoint of the car) and also give me the pixels of the entire image for reference (only use left front camera for the image)")
+
+prompt_pixels_simplified = ("give me the pixel location of the midpoint of the car in this image")
+# Path to your image
+image_path = "test_image_eight.png"
+
+# Getting the base64 string
+base64_image = encode_image(image_path)
+
+headers = {
+  "Content-Type": "application/json",
+  "Authorization": f"Bearer {api_key}"
+}
+question = prompt_qualitative_simplified
+payload = {
+  "model": "gpt-4o",
+  "messages": [
+    {
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": prompt_qualitative
+        },
+        {
+          "type": "image_url",
+          "image_url": {
+            "url": f"data:image/jpeg;base64,{base64_image}"
+          }
+        }
+      ]
+    }
+  ],
+  "max_tokens": 300
+}
