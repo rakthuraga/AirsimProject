@@ -33,3 +33,25 @@ def save_result(question, response, image_path, filename="result.json"):
         "response": response,
         "referenced_image": image_name
     })
+
+# Save the updated data back to the file
+    with open(filename, "w") as file:
+        json.dump(data, file, indent=4)
+
+# Function to analyze the image using GPT-4
+def analyze_image(image_path, question):
+    base64_image = encode_image(image_path)
+    
+    headers = {
+        "Content-Type": "application/json",
+        "Authorization": f"Bearer {api_key}"
+    }
+    
+    payload = {
+        "model": "gpt-4",
+        "messages": [
+            {"role": "user", "content": question},
+            {"role": "user", "content": {"type": "image_url", "image_url": {"url": f"data:image/jpeg;base64,{base64_image}"}}}
+        ],
+        "max_tokens": 300
+    }
