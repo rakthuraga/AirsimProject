@@ -171,3 +171,8 @@ payload = {
   ],
   "max_tokens": 300
 }
+
+response = requests.post("https://api.openai.com/v1/chat/completions", headers=headers, json=payload)
+
+#print(response.json())
+response_data = response.json()
