@@ -187,3 +187,5 @@ coordinates = extract_coordinates(response_message)
 # Extract qualitative descriptions from the response using NLTK
 qualitative_descriptions = extract_qualitative_descriptions(response_message)
 print("Qualitative Descriptions:", qualitative_descriptions)
+
+save_result(question, response_message, image_path)
