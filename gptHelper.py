@@ -60,3 +60,12 @@ def analyze_image(image_path, question):
     response_data = response.json()
     response_message = response_data['choices'][0]['message']['content'].strip()
     return response_message
+
+if __name__ == "__main__":
+    # Path to your image
+    image_path = "current_view.png"
+    question = "What objects can you identify in this image?"
+
+    response_message = analyze_image(image_path, question)
+    print(response_message)
+    save_result(question, response_message, image_path)
