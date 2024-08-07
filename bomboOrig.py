@@ -176,3 +176,14 @@ response = requests.post("https://api.openai.com/v1/chat/completions", headers=h
 
 #print(response.json())
 response_data = response.json()
+
+response_message = response_data['choices'][0]['message']['content'].strip()
+print(response_message)
+
+# Extract coordinates from the response using regex
+coordinates = extract_coordinates(response_message)
+#print("Coordinates:", coordinates)
+
+# Extract qualitative descriptions from the response using NLTK
+qualitative_descriptions = extract_qualitative_descriptions(response_message)
+print("Qualitative Descriptions:", qualitative_descriptions)
