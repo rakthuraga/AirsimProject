@@ -9,4 +9,4 @@ BomboOrig.py:
 This file takes in an image (screenshot from airsim unreal MidWestWorld environment) and analyzes the image using openai api.This file also includes functions to extract the keywords and coordinates from the response to the given prompt. Make sure to use your gpt 4 openai api key.
 
 baseGpt.py:
-This file is the main code which allows 
+This file is the main code which allows openai api to connect to MidWestWorl environment and convert your prompt directly into airsim code done by the openai api
